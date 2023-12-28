@@ -1,7 +1,10 @@
+using FirstProject.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<MVCDemoDbContext>(options =>
+);
 
 var app = builder.Build();
 

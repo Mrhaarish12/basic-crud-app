@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FirstProject.Models.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstProject.Data
 {
@@ -9,6 +10,6 @@ namespace FirstProject.Data
 
         }
 
-        public DbSet<> MyProperty { get; set; }
+        public DbSet<EmployeeModel> Employees { get; set; }
     }
 }

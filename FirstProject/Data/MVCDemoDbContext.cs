@@ -8,5 +8,7 @@ namespace FirstProject.Data
         {
 
         }
+
+        public DbSet<> MyProperty { get; set; }
     }
 }

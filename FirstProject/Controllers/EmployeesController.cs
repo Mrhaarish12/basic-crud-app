@@ -51,7 +51,7 @@ namespace FirstProject.Controllers
 
             var viewModel = new UpdateEmployeeViewModel()
             {
-                Id = Guid.NewGuid(),
+                Id = employee.Id,
                 Name = addEmployeeRequest.Name,
                 Email = addEmployeeRequest.Email,
                 Salary = addEmployeeRequest.Salary,

@@ -12,7 +12,7 @@ namespace FirstProject.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(AddEmployeeViewModelcs)
+        public IActionResult Add(AddEmployeeViewModelcs addEmployeeRequest)
         {
             return View();
         }

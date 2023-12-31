@@ -2,7 +2,7 @@
 
 namespace FirstProject.Controllers
 {
-    public class _ : Controller
+    public class EmployeesController : Controller
     {
         public IActionResult Index()
         {

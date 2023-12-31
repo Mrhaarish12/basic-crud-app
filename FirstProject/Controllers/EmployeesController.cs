@@ -89,7 +89,7 @@ namespace FirstProject.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(UpdateEmployeeViewModel omodel)
         {
-            var employee = await mvcDemoDbContext.Employees.Find(omodel.Id); 
+            var employee = await mvcDemoDbContext.Employees.FindAsync(omodel.Id); 
             if(employee != null)
             {
                 mvcDemoDbContext.Employees.Remove(employee);

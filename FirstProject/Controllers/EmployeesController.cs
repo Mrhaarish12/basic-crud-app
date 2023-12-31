@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FirstProject.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FirstProject.Controllers
 {
@@ -6,6 +7,12 @@ namespace FirstProject.Controllers
     {
         [HttpGet]
         public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(AddEmployeeViewModelcs)
         {
             return View();
         }

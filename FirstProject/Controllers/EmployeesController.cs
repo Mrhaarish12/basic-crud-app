@@ -32,7 +32,7 @@ namespace FirstProject.Controllers
                 DateOfBirth = addEmployeeRequest.DateOfBirth,
             };
             await mvcDemoDbContext.Employees.AddAsync(employee);
-            mvcDemoDbContext.SaveChanges();
+            mvcDemoDbContext.SaveChangesAsync();
             return RedirectToAction("Add");
         }
     }

@@ -73,6 +73,7 @@ namespace FirstProject.Controllers
             if(employee != null)
             {
                 employee.Name = model.Name;
+                employee.Email = model.Email;
             }
         }
     }

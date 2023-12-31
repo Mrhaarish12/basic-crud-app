@@ -94,6 +94,8 @@ namespace FirstProject.Controllers
             {
                 mvcDemoDbContext.Employees.Remove(employee);
                 await mvcDemoDbContext.SaveChangesAsync();
+
+                return RedirectToAction("Index");
             }
         }
     }

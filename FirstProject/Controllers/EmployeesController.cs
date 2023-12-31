@@ -54,7 +54,7 @@ namespace FirstProject.Controllers
                 Id = employee.Id,
                 Name = employee.Name,
                 Email = employee.Email,
-                Salary = addEmployeeRequest.Salary,
+                Salary = employee.Salary,
                 Department = addEmployeeRequest.Department,
                 DateOfBirth = addEmployeeRequest.DateOfBirth,
             }

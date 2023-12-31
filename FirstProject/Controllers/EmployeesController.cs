@@ -4,7 +4,8 @@ namespace FirstProject.Controllers
 {
     public class EmployeesController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Add()
         {
             return View();
         }

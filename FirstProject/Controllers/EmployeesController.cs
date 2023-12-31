@@ -17,7 +17,9 @@ namespace FirstProject.Controllers
             var employee = new Employee()
             {
                 Id = Guid.NewGuid(),
-                nameof = addEmployeeRequest.Name,
+                Name = addEmployeeRequest.Name,
+                Email = addEmployeeRequest.Email,
+
             }
         }
     }

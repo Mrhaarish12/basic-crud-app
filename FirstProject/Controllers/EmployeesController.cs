@@ -7,10 +7,12 @@ namespace FirstProject.Controllers
 {
     public class EmployeesController : Controller
     {
-        public EmployeesController(MVCDemoDbContext)
+        private readonly MVCDemoDbContext mVCDemoDbContext;
+        public EmployeesController(MVCDemoDbContext mVCDemoDbContext)
         {
-
+            this.mVCDemoDbContext = mVCDemoDbContext;
         }
+
         [HttpGet]
         public IActionResult Add()
         {

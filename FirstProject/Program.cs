@@ -9,6 +9,7 @@ builder.Services.AddDbContext<MVCDemoDbContext>(options =>
     options.UseSqlServer(builder.Configuration.
     GetConnectionString("MvcDemoConnectionString")));
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

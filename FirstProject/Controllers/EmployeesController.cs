@@ -63,8 +63,8 @@ namespace FirstProject.Controllers
                 return View(viewModel);
             }
 
-            
-            return View(employee);
+
+            return RedirectToAction("Index");
         }
     }
 }

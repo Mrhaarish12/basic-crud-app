@@ -20,7 +20,7 @@ namespace FirstProject.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(AddEmployeeViewModelcs addEmployeeRequest)
+        public async Task<IActionResult> Add(AddEmployeeViewModelcs addEmployeeRequest)
         {
             var employee = new EmployeeModel()
             {

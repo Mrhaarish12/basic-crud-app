@@ -47,7 +47,7 @@ namespace FirstProject.Controllers
         [HttpGet]
         public async Task<IActionResult> View(Guid id)
         {
-            var employee = mvcDemoDbContext.Employees.FirstOrDefaultAsync(x=> x.Id == id);
+            var employee = await mvcDemoDbContext.Employees.FirstOrDefaultAsync(x=> x.Id == id);
 
             if(employee != null)
             {
@@ -68,7 +68,7 @@ namespace FirstProject.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateEmployee(UpdateEmployeeViewModel model)
+        public async Task<IActionResult> View(UpdateEmployeeViewModel model)
         {
 
         }

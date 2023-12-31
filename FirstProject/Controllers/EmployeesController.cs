@@ -45,9 +45,9 @@ namespace FirstProject.Controllers
         }
 
         [HttpGet]
-        public IActionResult View()
+        public IActionResult View(Guid id)
         {
-
+            return View(id);
         }
     }
 }

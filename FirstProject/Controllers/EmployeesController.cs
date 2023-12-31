@@ -20,7 +20,7 @@ namespace FirstProject.Controllers
                 Name = addEmployeeRequest.Name,
                 Email = addEmployeeRequest.Email,
                 Salary = addEmployeeRequest.Salary,
-
+                Department = addEmployeeRequest.Department,
             }
         }
     }

@@ -14,7 +14,7 @@ namespace FirstProject.Controllers
         }
 
         [HttpGet]
-        public asyncIActionResult Index(int id)
+        public async Task<IActionResult> Index(int id)
         {
 
         }

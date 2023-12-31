@@ -22,7 +22,8 @@ namespace FirstProject.Controllers
                 Salary = addEmployeeRequest.Salary,
                 Department = addEmployeeRequest.Department,
                 DateOfBirth = addEmployeeRequest.DateOfBirth,
-            }
+            };
+            return View(employee);
         }
     }
 }

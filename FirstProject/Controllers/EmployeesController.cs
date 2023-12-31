@@ -92,7 +92,8 @@ namespace FirstProject.Controllers
             var employee = await mvcDemoDbContext.Employees.Find(omodel.Id); 
             if(employee != null)
             {
-                mvcDemoDbContext.Employees.Remove();
+                mvcDemoDbContext.Employees.Remove(employee);
+                await mvcDemoDbContext.SaveChangesAsync();
             }
         }
     }

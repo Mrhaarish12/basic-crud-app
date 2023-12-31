@@ -45,7 +45,7 @@ namespace FirstProject.Controllers
         }
 
         [HttpGet]
-        public IActionResult View(Guid id)
+        public async Task<IActionResult> View(Guid id)
         {
             var employee = mvcDemoDbContext.Employees.FirstOrDefaultAsync(x=> x.Id == id);
 

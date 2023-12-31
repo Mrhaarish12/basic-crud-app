@@ -14,6 +14,12 @@ namespace FirstProject.Controllers
         }
 
         [HttpGet]
+        public asyncIActionResult Index(int id)
+        {
+
+        }
+
+        [HttpGet]
         public IActionResult Add()
         {
             return View();

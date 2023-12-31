@@ -15,6 +15,9 @@ namespace FirstProject.Controllers
         public IActionResult Add(AddEmployeeViewModelcs addEmployeeRequest)
         {
             var employee = new Employee()
+            {
+                Id = Guid.NewGuid(),
+            }
         }
     }
 }

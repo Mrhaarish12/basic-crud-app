@@ -15,9 +15,10 @@ namespace FirstProject.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index(int id)
+        public async Task<IActionResult> Index()
         {
             var employees = await mvcDemoDbContext.Employees.ToListAsync();
+            return View(employees);
         }
 
         [HttpGet]

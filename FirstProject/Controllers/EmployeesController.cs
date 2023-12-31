@@ -19,6 +19,7 @@ namespace FirstProject.Controllers
                 Id = Guid.NewGuid(),
                 Name = addEmployeeRequest.Name,
                 Email = addEmployeeRequest.Email,
+                Salary = addEmployeeRequest.Salary,
 
             }
         }

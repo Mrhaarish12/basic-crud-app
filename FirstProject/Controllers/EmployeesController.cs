@@ -43,5 +43,11 @@ namespace FirstProject.Controllers
             await mvcDemoDbContext.SaveChangesAsync();
             return RedirectToAction("Add");
         }
+
+        [HttpGet]
+        public IActionResult View()
+        {
+
+        }
     }
 }

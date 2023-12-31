@@ -66,5 +66,11 @@ namespace FirstProject.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateEmployee(UpdateEmployeeViewModel model)
+        {
+
+        }
     }
 }

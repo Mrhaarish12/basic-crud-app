@@ -7,10 +7,10 @@ namespace FirstProject.Controllers
 {
     public class EmployeesController : Controller
     {
-        private readonly MVCDemoDbContext mVCDemoDbContext;
-        public EmployeesController(MVCDemoDbContext mVCDemoDbContext)
+        private readonly MVCDemoDbContext mvcDemoDbContext;
+        public EmployeesController(MVCDemoDbContext mvcDemoDbContext)
         {
-            this.mVCDemoDbContext = mVCDemoDbContext;
+            this.mvcDemoDbContext = mvcDemoDbContext;
         }
 
         [HttpGet]
@@ -31,7 +31,7 @@ namespace FirstProject.Controllers
                 Department = addEmployeeRequest.Department,
                 DateOfBirth = addEmployeeRequest.DateOfBirth,
             };
-            return View(employee);
+            mvcDemoDbContext.Add(employee);
         }
     }
 }

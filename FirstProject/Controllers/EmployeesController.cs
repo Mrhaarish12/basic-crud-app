@@ -68,7 +68,12 @@ namespace FirstProject.Controllers
         [HttpPost]
         public async Task<IActionResult> View(UpdateEmployeeViewModel model)
         {
-            var employee = await mvcDemoDbContext.Employees.FindAsync(model.Id)
+            var employee = await mvcDemoDbContext.Employees.FindAsync(model.Id);
+
+            if(employee != null)
+            {
+                employee.Name = model.Name;
+            }
         }
     }
 }

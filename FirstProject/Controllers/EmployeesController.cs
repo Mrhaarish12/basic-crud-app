@@ -14,7 +14,7 @@ namespace FirstProject.Controllers
         [HttpPost]
         public IActionResult Add(AddEmployeeViewModelcs addEmployeeRequest)
         {
-            return View();
+            var employee = new Employee()
         }
     }
 }

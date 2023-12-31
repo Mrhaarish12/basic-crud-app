@@ -1,11 +1,13 @@
-﻿using FirstProject.Models;
+﻿using FirstProject.Data;
+using FirstProject.Models;
+using FirstProject.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstProject.Controllers
 {
     public class EmployeesController : Controller
     {
-        public EmployeesController()
+        public EmployeesController(MVCDemoDbContext)
         {
 
         }
@@ -18,7 +20,7 @@ namespace FirstProject.Controllers
         [HttpPost]
         public IActionResult Add(AddEmployeeViewModelcs addEmployeeRequest)
         {
-            var employee = new Employee()
+            var employee = new EmployeeModel()
             {
                 Id = Guid.NewGuid(),
                 Name = addEmployeeRequest.Name,

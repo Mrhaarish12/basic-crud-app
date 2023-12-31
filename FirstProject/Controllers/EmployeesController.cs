@@ -5,6 +5,10 @@ namespace FirstProject.Controllers
 {
     public class EmployeesController : Controller
     {
+        public EmployeesController()
+        {
+
+        }
         [HttpGet]
         public IActionResult Add()
         {

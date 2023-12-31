@@ -62,15 +62,13 @@ namespace FirstProject.Controllers
                 };
                 return View(viewModel);
             }
-
-
             return RedirectToAction("Index");
         }
 
         [HttpPost]
         public async Task<IActionResult> View(UpdateEmployeeViewModel model)
         {
-
+            var employee = await mvcDemoDbContext.Employees.FindAsync(model.Id)
         }
     }
 }

@@ -75,6 +75,7 @@ namespace FirstProject.Controllers
                 employee.Name = model.Name;
                 employee.Email = model.Email;
                 employee.Salary = model.Salary;
+                employee.Department = model.Department;
             }
         }
     }

@@ -31,7 +31,7 @@ namespace FirstProject.Controllers
                 Department = addEmployeeRequest.Department,
                 DateOfBirth = addEmployeeRequest.DateOfBirth,
             };
-            mvcDemoDbContext.Add(employee);
+            mvcDemoDbContext.Employees.Add(employee);
         }
     }
 }

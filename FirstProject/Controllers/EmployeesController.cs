@@ -77,6 +77,8 @@ namespace FirstProject.Controllers
                 employee.Salary = model.Salary;
                 employee.Department = model.Department;
                 employee.DateOfBirth = model.DateOfBirth;
+
+                await mvcDemoDbContext.SaveChangesAsync();
             }
         }
     }

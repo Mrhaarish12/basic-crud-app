@@ -97,6 +97,7 @@ namespace FirstProject.Controllers
 
                 return RedirectToAction("Index");
             }
+            return RedirectToAction("Index");
         }
     }
 }

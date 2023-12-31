@@ -48,7 +48,7 @@ namespace FirstProject.Controllers
         public IActionResult View(Guid id)
         {
             var employee = mvcDemoDbContext.Employees.FirstOrDefaultAsync(x=> x.Id == id);
-            return View();
+            return View(employee);
         }
     }
 }

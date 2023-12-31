@@ -2,6 +2,7 @@
 using FirstProject.Models;
 using FirstProject.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FirstProject.Controllers
 {
@@ -16,7 +17,7 @@ namespace FirstProject.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(int id)
         {
-
+            mvcDemoDbContext.Employees.ToListAsync().Wait();
         }
 
         [HttpGet]

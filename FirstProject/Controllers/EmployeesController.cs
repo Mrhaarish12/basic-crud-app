@@ -51,18 +51,19 @@ namespace FirstProject.Controllers
 
             if(employee != null)
             {
-
+                var viewModel = new UpdateEmployeeViewModel()
+                {
+                    Id = employee.Id,
+                    Name = employee.Name,
+                    Email = employee.Email,
+                    Salary = employee.Salary,
+                    Department = employee.Department,
+                    DateOfBirth = employee.DateOfBirth,
+                };
+                return View(viewModel);
             }
 
-            var viewModel = new UpdateEmployeeViewModel()
-            {
-                Id = employee.Id,
-                Name = employee.Name,
-                Email = employee.Email,
-                Salary = employee.Salary,
-                Department = employee.Department,
-                DateOfBirth = employee.DateOfBirth,
-            };
+            
             return View(employee);
         }
     }

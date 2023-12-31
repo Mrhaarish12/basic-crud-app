@@ -60,7 +60,7 @@ namespace FirstProject.Controllers
                     Department = employee.Department,
                     DateOfBirth = employee.DateOfBirth,
                 };
-                return View(viewModel);
+                return await Task.Run(() => View(viewModel));
             }
             return RedirectToAction("Index");
         }

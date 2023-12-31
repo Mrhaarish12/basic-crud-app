@@ -21,6 +21,7 @@ namespace FirstProject.Controllers
                 Email = addEmployeeRequest.Email,
                 Salary = addEmployeeRequest.Salary,
                 Department = addEmployeeRequest.Department,
+                DateOfBirth = addEmployeeRequest.DateOfBirth,
             }
         }
     }

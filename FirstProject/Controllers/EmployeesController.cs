@@ -79,6 +79,8 @@ namespace FirstProject.Controllers
                 employee.DateOfBirth = model.DateOfBirth;
 
                 await mvcDemoDbContext.SaveChangesAsync();
+
+                return RedirectToAction("Index");
             }
         }
     }

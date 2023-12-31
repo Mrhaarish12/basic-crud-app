@@ -33,6 +33,7 @@ namespace FirstProject.Controllers
             };
             mvcDemoDbContext.Employees.Add(employee);
             mvcDemoDbContext.SaveChanges();
+            return RedirectToAction("Add");
         }
     }
 }

@@ -48,6 +48,11 @@ namespace FirstProject.Controllers
         public IActionResult View(Guid id)
         {
             var employee = mvcDemoDbContext.Employees.FirstOrDefaultAsync(x=> x.Id == id);
+
+            var viewModel = new UpdateEmployeeViewModel()
+            {
+
+            }
             return View(employee);
         }
     }

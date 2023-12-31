@@ -85,5 +85,11 @@ namespace FirstProject.Controllers
             return RedirectToAction("Index");
 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(UpdateEmployeeViewModel omodel)
+        {
+            var employee = mvcDemoDbContext.Employees.Find(omodel.Id); 
+        }
     }
 }

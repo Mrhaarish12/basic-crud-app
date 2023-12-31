@@ -49,6 +49,11 @@ namespace FirstProject.Controllers
         {
             var employee = mvcDemoDbContext.Employees.FirstOrDefaultAsync(x=> x.Id == id);
 
+            if(employee != null)
+            {
+
+            }
+
             var viewModel = new UpdateEmployeeViewModel()
             {
                 Id = employee.Id,
@@ -57,7 +62,7 @@ namespace FirstProject.Controllers
                 Salary = employee.Salary,
                 Department = employee.Department,
                 DateOfBirth = employee.DateOfBirth,
-            }
+            };
             return View(employee);
         }
     }

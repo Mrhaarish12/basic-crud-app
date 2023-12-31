@@ -52,7 +52,7 @@ namespace FirstProject.Controllers
             var viewModel = new UpdateEmployeeViewModel()
             {
                 Id = employee.Id,
-                Name = addEmployeeRequest.Name,
+                Name = employee.Name,
                 Email = addEmployeeRequest.Email,
                 Salary = addEmployeeRequest.Salary,
                 Department = addEmployeeRequest.Department,
